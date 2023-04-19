@@ -38,3 +38,29 @@ Plug 'zchee/deoplete-jedi'
 Plug 'mattn/emmet-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
+
+let mapleader = ' '
+if (has("termguicolors"))
+  set termguicolors
+endif
+
+lua require 'colorizer'.setup()
+
+"NERDCOMMENTER"
+nmap <C-_> <Plug>NERDCommenterToggle
+nmap <C-_> <Plug>NERDCommenterToggle<CR>gv
+
+"NERDTREE"
+let NERDTreeQuitOnOpen=1
+let g:NERDTreeMinimalUI=1
+
+"Tabs"
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#namemode=':t'
+nmap <leader>1 :bp<CR>
+nmap <leader>2 :bn<CR>
+nmap <C-w> :bd<CR>
+
+"Deoplete"
+let g:deoplete#enable_at_startup = 1
+
