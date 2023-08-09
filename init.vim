@@ -9,7 +9,7 @@ set softtabstop=4
 set expandtab
 set shiftwidth=4
 set autoindent
-st number
+set number
 set wildmode=longest,list "get bash-like completions"
 set cc=80 "80 column border"
 filetype plugin indent on
