@@ -100,3 +100,6 @@ You can download `.lrc` files, and rmpc will display synchronized scrolling lyri
   <img src="assets/lyrics.png" alt="rmpc Lyrics Pane" width="800"><br>
   <em>The rmpc synchronized scrolling lyrics in the Lyrics pane.</em>
 </div>
+
+## Inspiration 
+This setup was inspired by https://www.youtube.com/watch?v=6EAID9yopIE  which demonstrates how powerful rmpc can be when paired with a well-organized local library and a modern terminal.
