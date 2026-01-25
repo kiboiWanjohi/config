@@ -1,1 +1,930 @@
-
+{
+  "categories": [
+    {
+      "data": {
+        "color": "#0F0",
+        "score": 10
+      },
+      "id": 0,
+      "name": [
+        "Work"
+      ],
+      "rule": {
+        "regex": "Google Docs|libreoffice|ReText",
+        "type": "regex"
+      },
+      "name_pretty": "Work",
+      "subname": "Work",
+      "parent": null,
+      "depth": 0
+    },
+    {
+      "id": 1,
+      "name": [
+        "Work",
+        "Programming"
+      ],
+      "rule": {
+        "regex": "GitHub|Stack Overflow|BitBucket|Gitlab|vim|Spyder|kate|Ghidra|Scite|React",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Programming",
+      "subname": "Programming",
+      "parent": [
+        "Work"
+      ],
+      "depth": 1
+    },
+    {
+      "id": 2,
+      "name": [
+        "Work",
+        "Programming",
+        "ActivityWatch"
+      ],
+      "rule": {
+        "ignore_case": true,
+        "regex": "ActivityWatch|aw-",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Programming>ActivityWatch",
+      "subname": "ActivityWatch",
+      "parent": [
+        "Work",
+        "Programming"
+      ],
+      "depth": 2
+    },
+    {
+      "id": 3,
+      "name": [
+        "Work",
+        "Image"
+      ],
+      "rule": {
+        "regex": "GIMP|Inkscape",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Image",
+      "subname": "Image",
+      "parent": [
+        "Work"
+      ],
+      "depth": 1
+    },
+    {
+      "id": 4,
+      "name": [
+        "Work",
+        "Video"
+      ],
+      "rule": {
+        "regex": "Kdenlive",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Video",
+      "subname": "Video",
+      "parent": [
+        "Work"
+      ],
+      "depth": 1
+    },
+    {
+      "id": 5,
+      "name": [
+        "Work",
+        "Audio"
+      ],
+      "rule": {
+        "regex": "Audacity",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Audio",
+      "subname": "Audio",
+      "parent": [
+        "Work"
+      ],
+      "depth": 1
+    },
+    {
+      "id": 6,
+      "name": [
+        "Work",
+        "3D"
+      ],
+      "rule": {
+        "regex": "Blender",
+        "type": "regex"
+      },
+      "name_pretty": "Work>3D",
+      "subname": "3D",
+      "parent": [
+        "Work"
+      ],
+      "depth": 1
+    },
+    {
+      "data": {
+        "color": "#F33"
+      },
+      "id": 7,
+      "name": [
+        "Media"
+      ],
+      "rule": {
+        "type": "none"
+      },
+      "name_pretty": "Media",
+      "subname": "Media",
+      "parent": null,
+      "depth": 0
+    },
+    {
+      "data": {
+        "color": "#F80"
+      },
+      "id": 8,
+      "name": [
+        "Media",
+        "Games"
+      ],
+      "rule": {
+        "regex": "Minecraft|RimWorld",
+        "type": "regex"
+      },
+      "name_pretty": "Media>Games",
+      "subname": "Games",
+      "parent": [
+        "Media"
+      ],
+      "depth": 1
+    },
+    {
+      "data": {
+        "color": "#F33"
+      },
+      "id": 9,
+      "name": [
+        "Media",
+        "Video"
+      ],
+      "rule": {
+        "regex": "YouTube|Plex|VLC",
+        "type": "regex"
+      },
+      "name_pretty": "Media>Video",
+      "subname": "Video",
+      "parent": [
+        "Media"
+      ],
+      "depth": 1
+    },
+    {
+      "data": {
+        "color": "#FCC400"
+      },
+      "id": 10,
+      "name": [
+        "Media",
+        "Social Media"
+      ],
+      "rule": {
+        "ignore_case": true,
+        "regex": "reddit|Facebook|Twitter|Instagram|devRant",
+        "type": "regex"
+      },
+      "name_pretty": "Media>Social Media",
+      "subname": "Social Media",
+      "parent": [
+        "Media"
+      ],
+      "depth": 1
+    },
+    {
+      "data": {
+        "color": "#A8FC00"
+      },
+      "id": 11,
+      "name": [
+        "Media",
+        "Music"
+      ],
+      "rule": {
+        "ignore_case": true,
+        "regex": "Spotify|Deezer",
+        "type": "regex"
+      },
+      "name_pretty": "Media>Music",
+      "subname": "Music",
+      "parent": [
+        "Media"
+      ],
+      "depth": 1
+    },
+    {
+      "data": {
+        "color": "#9FF"
+      },
+      "id": 12,
+      "name": [
+        "Comms"
+      ],
+      "rule": {
+        "type": "none"
+      },
+      "name_pretty": "Comms",
+      "subname": "Comms",
+      "parent": null,
+      "depth": 0
+    },
+    {
+      "id": 13,
+      "name": [
+        "Comms",
+        "IM"
+      ],
+      "rule": {
+        "regex": "Messenger|Telegram|Signal|WhatsApp|Rambox|Slack|Riot|Element|Discord|Nheko|NeoChat|Mattermost",
+        "type": "regex"
+      },
+      "name_pretty": "Comms>IM",
+      "subname": "IM",
+      "parent": [
+        "Comms"
+      ],
+      "depth": 1
+    },
+    {
+      "id": 14,
+      "name": [
+        "Comms",
+        "Email"
+      ],
+      "rule": {
+        "regex": "Gmail|Thunderbird|mutt|alpine",
+        "type": "regex"
+      },
+      "name_pretty": "Comms>Email",
+      "subname": "Email",
+      "parent": [
+        "Comms"
+      ],
+      "depth": 1
+    },
+    {
+      "data": {
+        "color": "#CCC"
+      },
+      "id": 15,
+      "name": [
+        "Uncategorized"
+      ],
+      "rule": {
+        "type": "none"
+      },
+      "name_pretty": "Uncategorized",
+      "subname": "Uncategorized",
+      "parent": null,
+      "depth": 0
+    },
+    {
+      "data": {},
+      "id": 16,
+      "name": [
+        "Media",
+        "Social Media",
+        "Tor"
+      ],
+      "rule": {
+        "regex": "Tor",
+        "type": "regex"
+      },
+      "name_pretty": "Media>Social Media>Tor",
+      "subname": "Tor",
+      "parent": [
+        "Media",
+        "Social Media"
+      ],
+      "depth": 2
+    },
+    {
+      "data": {},
+      "id": 17,
+      "name": [
+        "Media",
+        "Video",
+        "Gooning"
+      ],
+      "rule": {
+        "regex": "EPORNER",
+        "type": "regex"
+      },
+      "name_pretty": "Media>Video>Gooning",
+      "subname": "Gooning",
+      "parent": [
+        "Media",
+        "Video"
+      ],
+      "depth": 2
+    },
+    {
+      "data": {
+        "color": "#FA28FF"
+      },
+      "id": 18,
+      "name": [
+        "Work",
+        "AI"
+      ],
+      "rule": {
+        "regex": "Copilot",
+        "type": "regex"
+      },
+      "name_pretty": "Work>AI",
+      "subname": "AI",
+      "parent": [
+        "Work"
+      ],
+      "depth": 1
+    },
+    {
+      "data": {},
+      "id": 19,
+      "name": [
+        "Mail",
+        "Mail",
+        "Mail"
+      ],
+      "rule": {
+        "regex": "Mail",
+        "type": "regex"
+      },
+      "name_pretty": "Mail>Mail>Mail",
+      "subname": "Mail",
+      "parent": [
+        "Mail",
+        "Mail"
+      ],
+      "depth": 2
+    },
+    {
+      "id": 20,
+      "name": [
+        "Mail",
+        "Mail"
+      ],
+      "rule": {
+        "type": "none"
+      },
+      "name_pretty": "Mail>Mail",
+      "subname": "Mail",
+      "parent": [
+        "Mail"
+      ],
+      "depth": 1
+    },
+    {
+      "id": 21,
+      "name": [
+        "Mail"
+      ],
+      "rule": {
+        "type": "none"
+      },
+      "name_pretty": "Mail",
+      "subname": "Mail",
+      "parent": null,
+      "depth": 0
+    },
+    {
+      "data": {},
+      "id": 22,
+      "name": [
+        "Media",
+        "Music",
+        "rmpc"
+      ],
+      "rule": {
+        "regex": "rmpc",
+        "type": "regex"
+      },
+      "name_pretty": "Media>Music>rmpc",
+      "subname": "rmpc",
+      "parent": [
+        "Media",
+        "Music"
+      ],
+      "depth": 2
+    },
+    {
+      "data": {
+        "color": "#7B64FF"
+      },
+      "id": 23,
+      "name": [
+        "Work",
+        "Overleaf"
+      ],
+      "rule": {
+        "regex": "Overleaf",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Overleaf",
+      "subname": "Overleaf",
+      "parent": [
+        "Work"
+      ],
+      "depth": 1
+    },
+    {
+      "data": {},
+      "id": 24,
+      "name": [
+        "Media",
+        "Social Media",
+        "LinkedIn"
+      ],
+      "rule": {
+        "regex": "LinkedIn",
+        "type": "regex"
+      },
+      "name_pretty": "Media>Social Media>LinkedIn",
+      "subname": "LinkedIn",
+      "parent": [
+        "Media",
+        "Social Media"
+      ],
+      "depth": 2
+    },
+    {
+      "data": {},
+      "id": 25,
+      "name": [
+        "Work",
+        "Programming",
+        "Jupyter"
+      ],
+      "rule": {
+        "regex": "Jupyter",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Programming>Jupyter",
+      "subname": "Jupyter",
+      "parent": [
+        "Work",
+        "Programming"
+      ],
+      "depth": 2
+    },
+    {
+      "data": {},
+      "id": 26,
+      "name": [
+        "Work",
+        "AI",
+        "Claude"
+      ],
+      "rule": {
+        "regex": "Claude",
+        "type": "regex"
+      },
+      "name_pretty": "Work>AI>Claude",
+      "subname": "Claude",
+      "parent": [
+        "Work",
+        "AI"
+      ],
+      "depth": 2
+    },
+    {
+      "data": {},
+      "id": 27,
+      "name": [
+        "Work",
+        "AI",
+        "DeepSeek"
+      ],
+      "rule": {
+        "regex": "DeepSeek",
+        "type": "regex"
+      },
+      "name_pretty": "Work>AI>DeepSeek",
+      "subname": "DeepSeek",
+      "parent": [
+        "Work",
+        "AI"
+      ],
+      "depth": 2
+    },
+    {
+      "data": {},
+      "id": 28,
+      "name": [
+        "Work",
+        "Overleaf",
+        "Overleaf"
+      ],
+      "rule": {
+        "regex": "Crixet",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Overleaf>Overleaf",
+      "subname": "Overleaf",
+      "parent": [
+        "Work",
+        "Overleaf"
+      ],
+      "depth": 2
+    },
+    {
+      "data": {},
+      "id": 29,
+      "name": [
+        "Media",
+        "Video",
+        "Gooning",
+        "SexyPorn"
+      ],
+      "rule": {
+        "regex": "SexyPorn",
+        "type": "regex"
+      },
+      "name_pretty": "Media>Video>Gooning>SexyPorn",
+      "subname": "SexyPorn",
+      "parent": [
+        "Media",
+        "Video",
+        "Gooning"
+      ],
+      "depth": 3
+    },
+    {
+      "data": {},
+      "id": 30,
+      "name": [
+        "Comms",
+        "Obsidian"
+      ],
+      "rule": {
+        "regex": "Obsidian",
+        "type": "regex"
+      },
+      "name_pretty": "Comms>Obsidian",
+      "subname": "Obsidian",
+      "parent": [
+        "Comms"
+      ],
+      "depth": 1
+    },
+    {
+      "data": {},
+      "id": 31,
+      "name": [
+        "Work",
+        "Overleaf",
+        "LaTeX"
+      ],
+      "rule": {
+        "regex": "LaTeX",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Overleaf>LaTeX",
+      "subname": "LaTeX",
+      "parent": [
+        "Work",
+        "Overleaf"
+      ],
+      "depth": 2
+    },
+    {
+      "data": {},
+      "id": 32,
+      "name": [
+        "Media",
+        "Shopping"
+      ],
+      "rule": {
+        "regex": "Kilimall",
+        "type": "regex"
+      },
+      "name_pretty": "Media>Shopping",
+      "subname": "Shopping",
+      "parent": [
+        "Media"
+      ],
+      "depth": 1
+    },
+    {
+      "data": {},
+      "id": 33,
+      "name": [
+        "Work",
+        "Reading"
+      ],
+      "rule": {
+        "regex": "\\.pdf",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Reading",
+      "subname": "Reading",
+      "parent": [
+        "Work"
+      ],
+      "depth": 1
+    },
+    {
+      "data": {},
+      "id": 34,
+      "name": [
+        "Media",
+        "Video",
+        "Gooning",
+        "Videos"
+      ],
+      "rule": {
+        "regex": "Isle\\.of\\.Dogs\\.2018\\.1080p\\.10bit\\.BluRay\\.6CH\\.x265\\.HEVC",
+        "type": "regex"
+      },
+      "name_pretty": "Media>Video>Gooning>Videos",
+      "subname": "Videos",
+      "parent": [
+        "Media",
+        "Video",
+        "Gooning"
+      ],
+      "depth": 3
+    },
+    {
+      "data": {},
+      "id": 35,
+      "name": [
+        "Work",
+        "Overleaf",
+        "Thesis"
+      ],
+      "rule": {
+        "regex": "Thesis",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Overleaf>Thesis",
+      "subname": "Thesis",
+      "parent": [
+        "Work",
+        "Overleaf"
+      ],
+      "depth": 2
+    },
+    {
+      "data": {},
+      "id": 36,
+      "name": [
+        "Work",
+        "Overleaf",
+        "LaTeX",
+        "Latex"
+      ],
+      "rule": {
+        "regex": "latex",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Overleaf>LaTeX>Latex",
+      "subname": "Latex",
+      "parent": [
+        "Work",
+        "Overleaf",
+        "LaTeX"
+      ],
+      "depth": 3
+    },
+    {
+      "data": {},
+      "id": 37,
+      "name": [
+        "Work",
+        "Programming",
+        "Terminal"
+      ],
+      "rule": {
+        "regex": "Terminal",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Programming>Terminal",
+      "subname": "Terminal",
+      "parent": [
+        "Work",
+        "Programming"
+      ],
+      "depth": 2
+    },
+    {
+      "data": {},
+      "id": 38,
+      "name": [
+        "Work",
+        "AI",
+        "DeepAI - BraveChat"
+      ],
+      "rule": {
+        "regex": "Chat",
+        "type": "regex"
+      },
+      "name_pretty": "Work>AI>DeepAI - BraveChat",
+      "subname": "DeepAI - BraveChat",
+      "parent": [
+        "Work",
+        "AI"
+      ],
+      "depth": 2
+    },
+    {
+      "data": {},
+      "id": 39,
+      "name": [
+        "Work",
+        "Programming",
+        "Git"
+      ],
+      "rule": {
+        "regex": "git, Git|sammyWanjohi",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Programming>Git",
+      "subname": "Git",
+      "parent": [
+        "Work",
+        "Programming"
+      ],
+      "depth": 2
+    },
+    {
+      "data": {},
+      "id": 40,
+      "name": [
+        "Work",
+        "Programming",
+        "Git",
+        "github"
+      ],
+      "rule": {
+        "regex": "github",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Programming>Git>github",
+      "subname": "github",
+      "parent": [
+        "Work",
+        "Programming",
+        "Git"
+      ],
+      "depth": 3
+    },
+    {
+      "data": {},
+      "id": 41,
+      "name": [
+        "Work",
+        "Programming",
+        "Git",
+        "git"
+      ],
+      "rule": {
+        "regex": "git",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Programming>Git>git",
+      "subname": "git",
+      "parent": [
+        "Work",
+        "Programming",
+        "Git"
+      ],
+      "depth": 3
+    },
+    {
+      "data": {},
+      "id": 42,
+      "name": [
+        "Work",
+        "Programming",
+        "Git",
+        "Git"
+      ],
+      "rule": {
+        "regex": "Git",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Programming>Git>Git",
+      "subname": "Git",
+      "parent": [
+        "Work",
+        "Programming",
+        "Git"
+      ],
+      "depth": 3
+    },
+    {
+      "data": {},
+      "id": 43,
+      "name": [
+        "Work",
+        "Programming",
+        "Git"
+      ],
+      "rule": {
+        "regex": "kiboiWanjohi",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Programming>Git",
+      "subname": "Git",
+      "parent": [
+        "Work",
+        "Programming"
+      ],
+      "depth": 2
+    },
+    {
+      "data": {},
+      "id": 44,
+      "name": [
+        "Work",
+        "Programming",
+        "Documentation"
+      ],
+      "rule": {
+        "regex": "Documentation",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Programming>Documentation",
+      "subname": "Documentation",
+      "parent": [
+        "Work",
+        "Programming"
+      ],
+      "depth": 2
+    },
+    {
+      "data": {},
+      "id": 45,
+      "name": [
+        "Work",
+        "Programming",
+        "Jupyter",
+        "Notebook"
+      ],
+      "rule": {
+        "regex": "notebook",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Programming>Jupyter>Notebook",
+      "subname": "Notebook",
+      "parent": [
+        "Work",
+        "Programming",
+        "Jupyter"
+      ],
+      "depth": 3
+    },
+    {
+      "data": {},
+      "id": 46,
+      "name": [
+        "Work",
+        "Programming",
+        "Git",
+        "Ellevo"
+      ],
+      "rule": {
+        "regex": "Ellevo",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Programming>Git>Ellevo",
+      "subname": "Ellevo",
+      "parent": [
+        "Work",
+        "Programming",
+        "Git"
+      ],
+      "depth": 3
+    },
+    {
+      "data": {},
+      "id": 47,
+      "name": [
+        "Media",
+        "Video",
+        "Pirate"
+      ],
+      "rule": {
+        "regex": "Pirate",
+        "type": "regex"
+      },
+      "name_pretty": "Media>Video>Pirate",
+      "subname": "Pirate",
+      "parent": [
+        "Media",
+        "Video"
+      ],
+      "depth": 2
+    }
+  ]
+}
