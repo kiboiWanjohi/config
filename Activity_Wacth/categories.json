@@ -169,7 +169,7 @@
         "Video"
       ],
       "rule": {
-        "regex": "YouTube|Plex|VLC",
+        "regex": "YouTube|Plex|VLC|Spotify",
         "type": "regex"
       },
       "name_pretty": "Media>Video",
@@ -190,7 +190,7 @@
       ],
       "rule": {
         "ignore_case": true,
-        "regex": "reddit|Facebook|Twitter|Instagram|devRant",
+        "regex": "reddit|Facebook|Twitter|Instagram|devRant|Home / X",
         "type": "regex"
       },
       "name_pretty": "Media>Social Media",
@@ -316,7 +316,7 @@
         "Gooning"
       ],
       "rule": {
-        "regex": "EPORNER",
+        "regex": "EPORNER|InPrivate|HQporner\\.com",
         "type": "regex"
       },
       "name_pretty": "Media>Video>Gooning",
@@ -585,7 +585,7 @@
         "LaTeX"
       ],
       "rule": {
-        "regex": "LaTeX",
+        "regex": "LaTeX|Prism",
         "type": "regex"
       },
       "name_pretty": "Work>Overleaf>LaTeX",
@@ -622,7 +622,7 @@
         "Reading"
       ],
       "rule": {
-        "regex": "\\.pdf",
+        "regex": "\\.pdf|PDF\\.|iLovePDF|PDF",
         "type": "regex"
       },
       "name_pretty": "Work>Reading",
@@ -725,7 +725,7 @@
         "DeepAI - BraveChat"
       ],
       "rule": {
-        "regex": "Chat",
+        "regex": "Chat|DeepAI",
         "type": "regex"
       },
       "name_pretty": "Work>AI>DeepAI - BraveChat",
@@ -915,7 +915,7 @@
         "Pirate"
       ],
       "rule": {
-        "regex": "Pirate",
+        "regex": "Pirate|qBittorrent",
         "type": "regex"
       },
       "name_pretty": "Media>Video>Pirate",
@@ -925,6 +925,191 @@
         "Video"
       ],
       "depth": 2
+    },
+    {
+      "data": {},
+      "id": 48,
+      "name": [
+        "Work",
+        "Writing"
+      ],
+      "rule": {
+        "regex": "ONLYOFFICE|QuillBot|stealthwriter|obsidian|Writer|Zotero",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Writing",
+      "subname": "Writing",
+      "parent": [
+        "Work"
+      ],
+      "depth": 1
+    },
+    {
+      "data": {},
+      "id": 49,
+      "name": [
+        "Work",
+        "AI",
+        "Perplexity"
+      ],
+      "rule": {
+        "regex": "Perplexity",
+        "type": "regex"
+      },
+      "name_pretty": "Work>AI>Perplexity",
+      "subname": "Perplexity",
+      "parent": [
+        "Work",
+        "AI"
+      ],
+      "depth": 2
+    },
+    {
+      "data": {},
+      "id": 50,
+      "name": [
+        "Work",
+        "AI",
+        "Gemini"
+      ],
+      "rule": {
+        "regex": "Gemini",
+        "type": "regex"
+      },
+      "name_pretty": "Work>AI>Gemini",
+      "subname": "Gemini",
+      "parent": [
+        "Work",
+        "AI"
+      ],
+      "depth": 2
+    },
+    {
+      "data": {},
+      "id": 51,
+      "name": [
+        "Comms",
+        "Application"
+      ],
+      "rule": {
+        "regex": "Application",
+        "type": "regex"
+      },
+      "name_pretty": "Comms>Application",
+      "subname": "Application",
+      "parent": [
+        "Comms"
+      ],
+      "depth": 1
+    },
+    {
+      "data": {},
+      "id": 52,
+      "name": [
+        "Work",
+        "Writing",
+        "Scholar"
+      ],
+      "rule": {
+        "regex": "Scholar|scholar\\.googleusercontent\\.com",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Writing>Scholar",
+      "subname": "Scholar",
+      "parent": [
+        "Work",
+        "Writing"
+      ],
+      "depth": 2
+    },
+    {
+      "data": {},
+      "id": 53,
+      "name": [
+        "Work",
+        "Programming",
+        "DataScience"
+      ],
+      "rule": {
+        "regex": "WorldQuant|Applied|Data|SPARK",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Programming>DataScience",
+      "subname": "DataScience",
+      "parent": [
+        "Work",
+        "Programming"
+      ],
+      "depth": 2
+    },
+    {
+      "data": {},
+      "id": 54,
+      "name": [
+        "Comms",
+        "Application",
+        "Webex"
+      ],
+      "rule": {
+        "regex": "Webex",
+        "type": "regex"
+      },
+      "name_pretty": "Comms>Application>Webex",
+      "subname": "Webex",
+      "parent": [
+        "Comms",
+        "Application"
+      ],
+      "depth": 2
+    },
+    {
+      "data": {},
+      "id": 55,
+      "name": [
+        "Calendar",
+        "Calendar",
+        "Calendar"
+      ],
+      "rule": {
+        "regex": "Calendar",
+        "type": "regex"
+      },
+      "name_pretty": "Calendar>Calendar>Calendar",
+      "subname": "Calendar",
+      "parent": [
+        "Calendar",
+        "Calendar"
+      ],
+      "depth": 2
+    },
+    {
+      "id": 56,
+      "name": [
+        "Calendar",
+        "Calendar"
+      ],
+      "rule": {
+        "type": "none"
+      },
+      "name_pretty": "Calendar>Calendar",
+      "subname": "Calendar",
+      "parent": [
+        "Calendar"
+      ],
+      "depth": 1
+    },
+    {
+      "id": 57,
+      "name": [
+        "Calendar"
+      ],
+      "rule": {
+        "type": "none"
+      },
+      "name_pretty": "Calendar",
+      "subname": "Calendar",
+      "parent": null,
+      "depth": 0
     }
   ]
 }
