@@ -1,0 +1,4 @@
+requests
+tqdm
+img2pdf
+pycryptodome
